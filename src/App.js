@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Chart from "chart.js";
+import "./App.css";
+import ApexChart from "./Components/ApexChart";
+import NavigationBar from "./Components/Navigation";
+import ResponsiveDrawer from "./Components/Navigation";
+import DashboardTest from "./Scenes/DashBoard";
+import DashboardToTest from "./Scenes/DashBoard/test";
+
+import CountryCases from "./Scenes/DashBoard/CountryCases";
+import CountryWide from "./Scenes/DashBoard/CountryWide";
+import ChartData from "./Scenes/DashBoard/DailyInfectedGraph";
+import WorldGraph from "./Scenes/DashBoard/LineChart";
+import MostAffected from "./Scenes/DashBoard/MostAffected";
+import TopStories from "./Scenes/DashBoard/TopStories";
+import WorldMap from "./Scenes/DashBoard/WorldMap";
+import WorldCases from "./Scenes/DashBoard/WorldWide";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <NavigationBar /> */}
+      {/* <ResponsiveDrawer /> */}
+      {/* <WorldCases /> */}
+      {/* <CountryWide /> */}
+      {/* <CountryCases /> */}
+      {/* <DashboardTest /> */}
+      {/* <MostAffected /> */}
+      {/* <TopStories /> */}
+      {/* <ApexChart /> */}
+      {/* <WorldGraph /> */}
+      {/* <WorldMap /> */}
+      {/* <ChartData /> */}
+      <DashboardToTest />
     </div>
   );
 }
